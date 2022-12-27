@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family= Sriracha & display = swap');
+
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursiva;
+    --fonte3: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    min-width: 100vh;
+    background-color: darkgrey;
+    
+}
+
+header{
+    margin: auto;
+    padding: 50px;
+    background-color: black;
+    
+}
+
+header > h1 {
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+    font-size: 10vw;
+    color: white;
+    text-align: center;
+
+}
+
+header > p {
+    font-family: var(--fonte1);
+    color: white;
+    text-align: center;
+
+}
+
+header > p > a {
+    font:bolder;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh; 
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 5vw; /* A utilização da 'unidade de medida' vw(view width - LARGURA DA TELA) é para adaptar o tamanho da fonte a largura da tela em que o projeto for exibido. Não é obrigatório porém vai de acordo com a necessidade do projeto. O MESMO SERVE PARA  vh (view heigth - altura da tela). Ambas podem ser utilizadas também para configuração das caixas.*/
+    font-style: italic;
+    line-height: 2em;
+
+}
+
+.normal{
+    color: black;
+    background-color: white;
+    
+
+}
+
+#img01{
+    background-size: cover;
+    background: url('pacote-d012/imagens/background001.jpg') right center fixed;
+
+}
+
+#img02{
+    background-size: cover;
+    background: url('pacote-d012/imagens/background002.jpg') right center fixed;
+}
+
+section.imagem > p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.144);
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+footer{
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    font-family: var(--fonte1);
+    text-align: center;
+}
+
+footer > p > a {
+    font-family: var(--fonte1);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
